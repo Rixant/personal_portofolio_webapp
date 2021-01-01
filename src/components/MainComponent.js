@@ -2,9 +2,10 @@ import { render } from 'react-dom';
 import NavBar from './NavigationComponents/Navbar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import About from './AboutComponent';
-import Projects from './ProjectsComponent';
+import Redirect from './RedirectComponent';
 import Resume from './ResumeComponent';
 import Home from './HomeComponent';
+
 
 
 const Main=()=>{
@@ -14,7 +15,7 @@ const Main=()=>{
                 <Switch>
                     <Route component={Home} path='/' exact />
                     <Route component={About} path='/about'  />
-                    <Route component={Projects} path='/projects'  />
+                    <Route exact path="/Projects" render={() => (window.location = "https://github.com/Rixant")} />
                     <Route component={Resume} path='/resume'/>
                     </Switch>  
             </BrowserRouter>

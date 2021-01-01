@@ -1,4 +1,8 @@
-
+*{
+    font-family: 'Lato', sans-serif;
+    font-style: bold;
+    background-color:#f2f7f8 ;
+}
 .my-image{
     max-width: 100% !important;
     height: auto;
@@ -7,8 +11,13 @@
 
 .content-box{
     background-color: #f2f7f8;
-    display: felx;
+    display: flex;
+   
 
+}
+
+.leftColumn{
+    background-color: #F8F8F8;
 }
 
 
@@ -43,7 +52,17 @@ div{
 
 .hero-image {
     padding-top: 70px;
+    
    
+}
+
+
+.my-image{
+    border-radius: 500px;
+    height: 80%;
+    width: 80%;
+    margin-left: 5%;
+
 }
 
 
@@ -73,16 +92,60 @@ div{
 
 .hero-info ul li span {
 	color: #40424a;
-    display: inline-block; 
     min-width: 220px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .hero-info ul li:last-child {
 	margin-bottom: 0;
 }
 
+.social-section{
+    margin-top: 10px;
+}
+
+ 
+.social-section .social-links {
+	display: flex;
+	background: #f2f7f8;
+	position: relative;
+    justify-content: center;
+  
+
+}
+
+.social-section .social-links a {
+	color: #484848;
+	font-size: 36px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.social-section .social-link-warp {
+	position: relative;
+}
+
+.social-section .social-link-warp h2 {
+	display: inline-block;
+	float: right;
+	font-weight: 400;
+	padding-left: 30px;
+	background: #f2f7f8;
+	position: relative;
+	z-index: 5;
+}
+
+/* .social-section .social-link-warp:after {
+	position: absolute;
+	content: '';
+	width: 50%;
+	height: 2px;
+	left: 23%;
+	top: 50%;
+	margin-top: 1px;
+	background: #cbcbcb;
+}  */
 
 
 
