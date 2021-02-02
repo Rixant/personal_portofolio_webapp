@@ -4,24 +4,29 @@ import leftPic from './assets/flags.jpg';
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
 import './styles/myStyle.css'
+import Footer from './FooterComponent';
+import Projects from './ProjectComponent';
+import Works from './WorksComponent';
+import './assets/images/con.jpg'
+
 
 
 const Profile=()=>{
     return(
-    <section className="hero-section spad">
-       <Container className="themed-container content-box" fluid={true}>
+    <section className="hero-section spad mb-5" >
+       <Container className="themed-container content-box " fluid={false}>
             <Row>
                 <Col xl={{size:10, offset:1 }}>
                     <Row>
                         <Col sm="12" md={{ size: 6}} className="info-box">
                             <div className="hero-text" >
                                 <h2> Rixant Rokaha</h2>
-                                <hr></hr>
+                                <hr />
                                 <p> Aspiring Machine Learning Engineer</p>
                             </div>
                             <div className="hero-info .d-lg-inline-block d-block " >
                                 <h2 > General Info</h2>
-                                <hr></hr>
+                                <hr className="" />
                                 <ul>
                                     <li><span className="d-block d-xs-block d-lg-inline-block">Date of Birth </span> Feb 20, 1997</li>
                                     <li><span className="d-block d-xs-block d-lg-inline-block">Address </span>Bloomfield, New Jersey, US</li>
@@ -30,12 +35,13 @@ const Profile=()=>{
                                 </ul> 
                             </div>
                         </Col>
-                        <Col sm="12" md={{ size: 6 }}>
+                        <Col sm="12" md={{ size: 6}}>
                             <figure className="hero-image">
                                 <img src={rightPic} className="my-image" />
                             </figure>
                             <Social />
                         </Col>
+                    
                     </Row>
                 </Col>
             </Row>  
@@ -50,13 +56,10 @@ const Profile=()=>{
 const Social=()=>{
     return(
     <section className="social-section">
-        <Container className="themed-container social-box" fluid={true}>      
-            <Row>
-                <Col xl={{size:10, offset:1}}>
-                <h2 className="d-flex justify-content-center">My Social Links:</h2>
+                <h2 className="d-flex justify-content-center">My Social Profiles</h2>
                     <div className="social-link-warp "> 
-                        <hr></hr>
-                        <div className="social-links">
+                        <hr className="" />
+                        <div className="social-links ">
                             <a href="https://www.facebook.com/Rixant/"><i className="fa fa-facebook"><FaFacebookF /></i></a>
                             <a href="https://www.instagram.com/rixxnt/"><i className="fa fa-instagram"><FaInstagram /></i></a>
                             <a href="https://twitter.com/Rixant08"><i  className="fa fa-twitter"><FaTwitter /></i></a>  
@@ -65,26 +68,31 @@ const Social=()=>{
                         </div>
                         {/* <h2 class="d-none d-lg-inline-block d-sm-none d-md-none">My Social Profiles</h2> */}
                     </div>
-                </Col>
-            </Row>
-        </Container>
     </section>
+    
     );
 
 }
 
 
 function Home(){
+
+ 
     return(
         
         
-        <React.Fragment>
+        <React.Fragment >
             <Profile />
+            <Projects />
+            <Footer />
         </React.Fragment>
 
     
     )
 }
+
+
+
 
 
 

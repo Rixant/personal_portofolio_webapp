@@ -3,7 +3,7 @@ import { Jumbotron, Container, Row, Col } from 'reactstrap';
 import './styles/myStyle.css'
 
 
-function About(){
+function Contact(){
         return(
             <section className="about-section">
                 <Container className="themed-container about-box" fluid={true}>
@@ -23,4 +23,4 @@ function About(){
     }
 
 
-export default About;
+export default Contact;

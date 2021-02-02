@@ -1,10 +1,13 @@
+.my-navigation{
+  background-color: black;
+}
 .navbar {
-  background-color:#222222;
+  /* background-color:white; */
   height: 80px;
   display: flex;
   justify-content: start;
   align-items: center;
-  border-bottom: 1px solid  gray;
+ 
 
  
 }
@@ -12,7 +15,6 @@
 .menu-bars {
   margin-left: 2rem;
   font-size: 2rem;
-  background: #222222;
 
 }
 
@@ -20,7 +22,7 @@
 
 .nav-menu {
   background-color:#222222;
-  width: 250px;
+  width: 300px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -37,9 +39,16 @@
   transition: 350ms;
 }
 
+
+
+.menu-circle{
+  height: 50px;
+  width: 50px;
+}
 .nav-text {
   display: flex;
   justify-content: start;
+  background-color: #222222;
   align-items: center;
   padding: 8px 0px 8px 16px;
   list-style: none;
@@ -48,6 +57,7 @@
 
 .nav-text a {
   text-decoration: none;
+  background-color: #222222;
   color: white;
   font-size: 18px;
   width: 95%;
@@ -64,7 +74,6 @@
 .nav-text :hover{
   text-decoration: none;
   background-color: #333333 ;
-  color: white;
   font-size: 18px;
   width: 95%;
   height: 100%;
@@ -72,20 +81,23 @@
   align-items: center;
   padding: 0 16px;
   border-radius: 4px;
+  color: white;
 
 }
 
 .nav-text a:hover {
   background-color: #333333;
   text-decoration: none;
-  color: white;
 }
 
 
 
 .nav-menu-items {
   width: 100%;
+  
 }
+
+
 
 .navbar-toggle {
   background-color:#222222;
@@ -98,4 +110,8 @@
 
 span {
   margin-left: 16px;
+ 
 }
+
+
+

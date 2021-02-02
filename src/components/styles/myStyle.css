@@ -1,33 +1,31 @@
-*{
-    font-family: 'Lato', sans-serif;
-    font-style: bold;
-    background-color:#222222 ;
-    color: white;
-}
-.my-image{
-    max-width: 100% !important;
-    height: auto;
-    width: auto;
+
+
+
+/* div{
+    display: block;
+} */
+
+/* ********************** */
+/* hero-section styling */
+/* ********************** */
+
+.hero-section {
+    margin:0 10% 0 10%;
 }
 
 .content-box{
-    background-color: #f2f7f8;
-    display: flex;
+    background-color:black;
+    display: flex;   
    
 
 }
 
-.leftColumn{
-    background-color: #F8F8F8;
-}
 
-
-div{
-    display: block;
-}
-
-.hero-section {
-	background: #f2f7f8;
+.hero-section hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    /* margin-right: 9%;	 */
 }
 
 
@@ -46,34 +44,33 @@ div{
 }
 
 .hero-text p {
-	font-size: 33px;
+	font-size: 30px;
     line-height: 1.3;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
 .hero-image {
-    padding-top: 70px;
-    
-   
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;   
 }
-
 
 .my-image{
     border-radius: 500px;
     height: 80%;
     width: 80%;
-    margin-left: 5%;
+    padding: 0 auto;
+    z-index: 0;
 
 }
-
-
 
 .hero-info h2 {
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 30px;
     font-family: 'Lato', sans-serif;
+    color: white;
 }
 
 .hero-info ul {
@@ -83,7 +80,7 @@ div{
 }
 
 .hero-info ul li {
-	font-size: 24px;
+	font-size: 20px;
 	color: #808181;
     margin-bottom: 15px;
     margin: 0;
@@ -94,7 +91,7 @@ div{
 
 .hero-info ul li span {
 	color: white;
-    min-width: 220px;
+    min-width: 150px;
     margin: 0 auto;
     padding: 0 auto;
 }
@@ -103,17 +100,24 @@ div{
 	margin-bottom: 0;
 }
 
+
+/* ********************** */
+/* social-section styling */
+/* ********************** */
+
+
 .social-section{
-    margin-top: 10px;
+    margin-top: 6%;
 }
 
 
  
 .social-section .social-links {
 	display: flex;
-	background: #222222;
-	position: relative;
+	background: black;
+	/* position: relative; */
     justify-content: center;
+    padding-left: 10%;
   
 
 }
@@ -121,15 +125,22 @@ div{
 .social-section .social-links a {
 	color: white;
 	font-size: 36px;
-    margin-right: 40px;
+    margin-right: 5%;
     align-items: center;
+    
 }
 
 .social-section .social-link-warp {
-	position: relative;
+    /* position: relative; */
+    padding-bottom: 5%;
 }
 
-.social-section .social-link-warp h2 {
+
+.social-section h2{
+    color: white;
+}
+
+/* .social-section .social-link-warp h2 {
 	display: inline-block;
 	float: right;
 	font-weight: 400;
@@ -137,7 +148,7 @@ div{
 	background: #222222;
 	position: relative;
 	z-index: 5;
-}
+} */
 
 /* .social-section .social-link-warp:after {
 	position: absolute;
@@ -150,6 +161,142 @@ div{
 	background: #cbcbcb;
 }  */
 
+
+.social-section hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    width: 80%;
+}
+
+
+
+/* ********************** */
+/* works-section styling */
+/* ********************** */
+
+.works-section{
+    margin:0 10% 0 8%  ;
+    
+
+}
+
+
+.works-section h2,h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+	line-height: normal; 
+    padding-top: 10px;
+
+    font-family: 'Josefin Sans', sans-serif;
+ 
+}
+
+
+
+
+.works-section p{
+    line-height: 1.5;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+  
+}
+
+
+.project-content{
+   margin: 0;
+   padding: 0;
+   background-color: #111111;
+      
+  }
+
+
+.project-content hr{
+    border: 0;              
+    background-color:#ccc;
+    height: 2px;
+    color:white;
+      
+  }
+
+  .card-box hr{
+    border: 0;              
+    background-color:#ccc;
+    width: 100%;
+    margin-bottom: 50px;
+    height: 2px;
+    color:white;
+      
+  }
+
+
+
+
+
+/* ********************** */
+/* resume-section styling */
+/* ********************** */
+
+
+.resume-section{
+    margin: 0;
+    margin-top: 5%;
+    background-color: whitesmoke;
+    color: white;
+}
+
+.resume-section hr{
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:#ccc;
+  height: 1px;
+   
+}
+
+.box{
+    background-color: #333333;  
+}
+
+.rightColumn, .leftColumn{
+    margin-left: 2% ;
+    padding: 10% 0
+  
+}
+.resume-section h1{
+    background-color: #333333;
+}
+
+.resume-section h5{
+    background-color: #333333;
+}
+
+.resume-section p{
+    background-color: #333333;
+}
+
+.resume-section ul{
+    background-color: #333333;
+}
+.resume-section li{
+    background-color: #333333;
+}
+
+
+/* ********************** */
+/* resume-section styling */
+/* ********************** */
+
+
+.footer-section{
+    height: 60px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    margin: 0 10% 0 10%;
+}
 
 
 

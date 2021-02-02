@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
+import * as HiIcons from 'react-icons/hi';
+import * as ImIcons from 'react-icons/im';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
@@ -12,18 +14,18 @@ function Navbar() {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <>
-      <IconContext.Provider value={{ color: 'black' }}>
+    <div className="my-navigation">
+      <IconContext.Provider value={{ color: 'white' }}>
         <div  className='navbar slidable'>
           <Link to='#' className='menu-bars'>
-            <FaIcons.FaBars onClick={showSidebar} />
+            <HiIcons.HiMenuAlt4 className="menu-circle" onClick={showSidebar} />
           </Link>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
               <Link to='#' className='menu-bars'>
-                <AiIcons.AiOutlineClose />
+                <ImIcons.ImCancelCircle />
               </Link>
             </li>
             {SidebarData.map((item, index) => {
@@ -39,7 +41,7 @@ function Navbar() {
           </ul>
         </nav>
       </IconContext.Provider>
-    </>
+    </div>
   );
 }
 
