@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Media, Container, Row, Col} from 'reactstrap';
+import { Media} from 'reactstrap';
 import {CardDeck,
-    Card, CardImg, CardText, CardBody,
+    Card, CardText, CardBody,
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
-import { PROJECTS } from './shared/Works';
+import { PROJECTS } from './shared/Projects';
 
-import './styles/myStyle.css'
+import './styles/style.css'
 
 
 
@@ -20,22 +20,18 @@ class Projects extends Component {
     }
 
 
-    
-    
-
     render() {
       const menu = this.state.projects.map((project) => {
           return (
       
             <div key={project.id} className="project-content" >
     <CardDeck className="mb-5">
-        <Card rowSize={3} cardSize={2} className="mb-3 mt-3" style={{backgroundColor:"#111111"}}>
-            {/* <CardImg top  src="" alt="alt" /> */}
+        <Card  className="mb-3 mt-3" style={{backgroundColor:"#222222"}}>
             <CardBody>
                 <CardTitle tag="h5"><h2>{project.name}</h2></CardTitle>
-<CardSubtitle tag="h6" className="mb-2 text-muted">{project.subtitle}</CardSubtitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">{project.subtitle}</CardSubtitle>
                 <CardText>{project.description}</CardText>
-                <Button style={{backgroundColor:"#b96500" }}>See Github Repository</Button>
+                <Button  className="repo-button" style={{backgroundColor:"#6200EE" }}><a href={project.repo}>See Github Repository</a> </Button>
             </CardBody>
         </Card>
        
@@ -48,26 +44,10 @@ class Projects extends Component {
       });
 
       return (
-        <section className="works-section spad " >
-          
-        <Container className="themed-container card-box" fluid={true}>
-        
-            <Row>
-                <Col xl={{size:10, offset:1 }}>
-                <h1 className="mb-4 ml-5" > Projects </h1>
-                <hr className="d-sm-none ml-4" />
-                <hr className="d-none d-sm-block  ml-3"/>
-                    <Row>
                         
-            <Media list>
+            <Media list className="pl-0">
                 {menu}
             </Media>
-    
-            </Row>
-            </Col>
-            </Row>
-        </Container>
-        </section>
 
       );
   }

@@ -27,7 +27,9 @@ function Navbar() {
               <Link to='#' className='menu-bars'>
                 <ImIcons.ImCancelCircle />
               </Link>
+        
             </li>
+            {/* <li><h2>Menu</h2></li> */}
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>

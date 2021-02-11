@@ -1,6 +1,6 @@
 import React from 'react';
-import { Jumbotron, Container, Row, Col } from 'reactstrap';
-import './styles/myStyle.css';
+import { Container, Row, Col } from 'reactstrap';
+import './styles/style.css';
 
 function Footer(){
 

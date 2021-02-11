@@ -1,20 +1,18 @@
 
 
-
-/* div{
-    display: block;
-} */
-
 /* ********************** */
 /* hero-section styling */
 /* ********************** */
+
+
+
 
 .hero-section {
     margin:0 10% 0 10%;
 }
 
 .content-box{
-    background-color:black;
+    background-color:#111111;
     display: flex;   
    
 
@@ -25,7 +23,6 @@
     height: 1px;
     background-color: #ccc;
     border: none;
-    /* margin-right: 9%;	 */
 }
 
 
@@ -50,13 +47,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 .hero-image {
     padding-top: 20%;
-    display: flex;
-    justify-content: center;   
+    /* display: flex; */
+    justify-content: center; 
+   
 }
 
-.my-image{
+.hero-image img{
     border-radius: 500px;
     height: 80%;
     width: 80%;
@@ -114,10 +113,10 @@
  
 .social-section .social-links {
 	display: flex;
-	background: black;
+	background: #111111;
 	/* position: relative; */
     justify-content: center;
-    padding-left: 10%;
+    /* padding-left: 10%; */
   
 
 }
@@ -125,7 +124,8 @@
 .social-section .social-links a {
 	color: white;
 	font-size: 36px;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     align-items: center;
     
 }
@@ -140,49 +140,45 @@
     color: white;
 }
 
-/* .social-section .social-link-warp h2 {
-	display: inline-block;
-	float: right;
-	font-weight: 400;
-	padding-left: 30px;
-	background: #222222;
-	position: relative;
-	z-index: 5;
-} */
-
-/* .social-section .social-link-warp:after {
-	position: absolute;
-	content: '';
-	width: 50%;
-	height: 2px;
-	left: 23%;
-	top: 50%;
-	margin-top: 1px;
-	background: #cbcbcb;
-}  */
 
 
 .social-section hr{
     height: 1px;
     background-color: #ccc;
     border: none;
-    width: 80%;
+    width: 100%;
+    /* margin-left: 2%; */
 }
 
 
 
 /* ********************** */
-/* works-section styling */
+/* projects-section styling */
 /* ********************** */
 
-.works-section{
-    margin:0 10% 0 8%  ;
-    
+
+.projects-section{
+    margin-top: 6em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+.projects-section h1{
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+
 
 }
 
 
-.works-section h2,h1 {
+
+.projects-section h2 {
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -194,9 +190,7 @@
 }
 
 
-
-
-.works-section p{
+.projects-section p{
     line-height: 1.5;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -204,32 +198,31 @@
   
 }
 
+.project-header{
+    margin-bottom: 4em;
+}
+
 
 .project-content{
    margin: 0;
    padding: 0;
-   background-color: #111111;
+   background-color: #222222;
       
   }
 
 
-.project-content hr{
-    border: 0;              
-    background-color:#ccc;
-    height: 2px;
-    color:white;
-      
+  .repo-button a{
+      text-decoration: none;
+      color: white;
   }
 
-  .card-box hr{
-    border: 0;              
-    background-color:#ccc;
-    width: 100%;
-    margin-bottom: 50px;
-    height: 2px;
-    color:white;
-      
-  }
+  .repo-button a:hover{
+    text-decoration: none;
+    color: white;
+}
+  
+
+ 
 
 
 
@@ -247,43 +240,51 @@
     color: white;
 }
 
-.resume-section hr{
-  border: 0;
-  clear:both;
-  display:block;
-  width: 100%;               
-  background-color:#ccc;
-  height: 1px;
-   
+
+
+.resume-image img{
+    height: 100%;
+    width: 60%;
+    margin: 0 20%;
+    opacity: 0.8;
 }
 
-.box{
-    background-color: #333333;  
+
+.resume-section h2{
+    font-size: 2.3em;
+    font-weight: bold;
+    color: white;
+	line-height: normal;
+    margin-bottom: 10px;
+    /* font-family: 'Josefin Sans', sans-serif; */
 }
 
-.rightColumn, .leftColumn{
-    margin-left: 2% ;
-    padding: 10% 0
-  
-}
-.resume-section h1{
-    background-color: #333333;
+
+
+
+/* .resume-section hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin-bottom: 2em;
+} */
+
+
+
+.download-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
 }
 
-.resume-section h5{
-    background-color: #333333;
+.download-button a:link{
+    text-decoration: none;
+    color: white;
+
 }
 
-.resume-section p{
-    background-color: #333333;
-}
-
-.resume-section ul{
-    background-color: #333333;
-}
-.resume-section li{
-    background-color: #333333;
-}
 
 
 /* ********************** */
@@ -295,8 +296,66 @@
     height: 60px;
     padding-top: 15px;
     margin-bottom: 15px;
-    margin: 0 10% 0 10%;
+    margin: 0 ;
+    color: #ccc;
+    background-color: #111111;
+    border-top: 1px solid #222222;
+    padding: 10px;
+    box-shadow: 5px 10px #222222;
 }
+
+/* *************** */
+/* contact-section styling */
+/* *************** */
+
+.contact-section{
+    margin: 5% 0;
+    color: white;
+}
+
+
+
+/* *************** */
+/* about-section styling */
+/* *************** */
+
+
+
+.about-section{
+    margin: 0 10%;
+    margin-bottom: 10%;
+    color: white;
+}
+
+.about-header h2{
+    text-align: center;
+}
+
+
+.about-image{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.about-image img{
+    height: 40%;
+    width: 40%;
+}
+
+.about-me{
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.about-me p{
+    line-height: 1.5em;
+}
+
+
+
+
+
 
 
 
