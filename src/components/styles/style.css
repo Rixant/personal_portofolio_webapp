@@ -106,7 +106,7 @@
 
 
 .social-section{
-    margin-top: 6%;
+    margin-top: 8%;
 }
 
 
@@ -146,7 +146,8 @@
     height: 1px;
     background-color: #ccc;
     border: none;
-    width: 100%;
+    width: 80%;
+    margin: 0 10%;
     /* margin-left: 2%; */
 }
 

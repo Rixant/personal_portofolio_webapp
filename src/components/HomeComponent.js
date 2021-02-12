@@ -15,15 +15,15 @@ const Profile=()=>{
             <Row>
                 <Col xl={{size:10, offset:1 }}>
                     <Row>
-                        <Col md="12" lg={{ size: 6}} className="info-box">
+                        <Col sm="12" lg={{ size: 6}} className="info-box">
                             <div className="hero-text" >
                                 <h2> Rixant Rokaha</h2>
                                 <hr />
                                 <p> Aspiring Machine Learning Engineer</p>
                             </div>
-                            <div className="hero-info d-lg-inline-block d-block " >
+                            <div className="hero-info .d-lg-inline-block d-block " >
                                 <h2 > General Info</h2>
-                                <hr className="" />
+                                <hr  />
                                 <ul>
                                     <li><span className="d--block d-md-inline-block">Date of Birth </span> Feb 20, 1997</li>
                                     <li><span className="d-block d-md-inline-block">Address </span>Bloomfield, New Jersey, US</li>
@@ -32,7 +32,7 @@ const Profile=()=>{
                                 </ul> 
                             </div>
                         </Col>
-                        <Col md="12" lg={{ size: 6}}>
+                        <Col sm="12" lg={{ size: 6}}>
                             <figure className="hero-image">
                                 <img src={rightPic} className="my-image" />
                             </figure>
@@ -65,7 +65,7 @@ const Profile=()=>{
 const Social=()=>{
     return(
     <section className="social-section">
-                <h2 className="d-flex justify-content-center">My Social Profiles</h2>
+                <h2 className="d-flex justify-content-center">Social Profiles</h2>
                     <div className="social-link-warp "> 
                         <hr className="" />
                         <div className="social-links ">
