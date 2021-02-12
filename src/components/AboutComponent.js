@@ -24,7 +24,7 @@ function About(){
                                        Hi, I am Rixant. I am currently a junior studying Computer Science and Mathematics at Caldwell University. I like to learn new technolgies and read articles and research papers.
                                     </p>
                                     <p>
-                                        "
+                                        Site On Construction........
                                         
                                         
                                         
