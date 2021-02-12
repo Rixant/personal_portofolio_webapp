@@ -25,7 +25,7 @@ const Profile=()=>{
                                 <h2 > General Info</h2>
                                 <hr  />
                                 <ul>
-                                    <li><span className="d--block d-md-inline-block">Date of Birth </span> Feb 20, 1997</li>
+                                    <li><span className="d-block d-md-inline-block">Date of Birth </span> Feb 20, 1997</li>
                                     <li><span className="d-block d-md-inline-block">Address </span>Bloomfield, New Jersey, US</li>
                                     <li><span className="d-block  d-md-inline-block">E-mail </span>rishantrokaha@gmail.com</li>
                                     <li><span className="d-block d-md-inline-block">Phone </span>+1 973 652 4487</li>
