@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import './styles/style.css'
 import rixant3 from './assets/images/rixant3.jpg'
 
@@ -17,7 +17,7 @@ function About(){
                                         <hr className="" />
                                     </div>
                                     <figure className="about-image">
-                                        <img src={rixant3} />
+                                        <img src={rixant3}  alt="myimage" />
                                     </figure>
                                     <div className="about-me">
                                     <p>

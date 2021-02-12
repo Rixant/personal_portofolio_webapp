@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
 import * as HiIcons from 'react-icons/hi';
 import * as ImIcons from 'react-icons/im';
 import { Link } from 'react-router-dom';

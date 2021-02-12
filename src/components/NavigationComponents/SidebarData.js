@@ -13,12 +13,6 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'About Me',
-    path: '/about',
-    icon: <IoIcons.IoIosPaper />,
-    cName: 'nav-text'
-  },
-  {
     title: 'Projects',
     path: '/projects',
     icon: <BsIcons.BsLayersFill />,
@@ -28,6 +22,12 @@ export const SidebarData = [
     title: 'Resume',
     path: '/resume',
     icon: <BsIcons.BsReverseLayoutTextSidebarReverse />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'About Me',
+    path: '/about',
+    icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },
   {

@@ -15,11 +15,11 @@ function Resume(){
                         </div>
                       
                         <figure className="resume-image mt-5">
-                                <img src={resume} className="res-img" />
+                                <img src={resume} className="res-img"  alt="resume" />
                         </figure>  
                         <div className="download-button">
                             <Button style={{backgroundColor:"#6200EE" }} className="justify-content-center" >
-                                <a href={resumeFile} download>Download Resume</a>  
+                                <a href={resumeFile}  download>Download Resume</a>  
                             </Button>
                         </div> 
             

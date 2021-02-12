@@ -34,7 +34,7 @@ const Profile=()=>{
                         </Col>
                         <Col sm="12" lg={{ size: 6}}>
                             <figure className="hero-image">
-                                <img src={rightPic} className="my-image" />
+                                <img src={rightPic} className="my-image"  alt="myimage" />
                             </figure>
                             <Social />
                         </Col>
