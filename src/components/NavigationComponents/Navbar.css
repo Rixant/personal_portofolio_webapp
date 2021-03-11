@@ -91,13 +91,13 @@
 .nav-text a:hover {
   background-color: #333333;
   text-decoration: none;
-  border-bottom: 2px solid #6200EE;
+  border-bottom: 2px solid #f6f6e7;
 }
 
 .nav-text a:active {
   /* background-color: #333333;
   text-decoration: none; */
-  border-bottom: 2px solid #6200EE;
+  border-bottom: 2px solid #f6f6e7;
 }
 
 

@@ -26,12 +26,12 @@ class Projects extends Component {
       
             <div key={project.id} className="project-content" >
     <CardDeck className="mb-5">
-        <Card  className="mb-3 mt-3" style={{backgroundColor:"#222222"}}>
+        <Card  className="pb-3 pt-3" style={{backgroundColor:"#222222", borderRadius:"10px"}}>
             <CardBody>
                 <CardTitle tag="h5"><h2>{project.name}</h2></CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">{project.subtitle}</CardSubtitle>
                 <CardText>{project.description}</CardText>
-                <Button  className="repo-button" style={{backgroundColor:"#6200EE" }}><a href={project.repo}>See Github Repository</a> </Button>
+                <Button  className="repo-button" style={{backgroundColor:"#f6f6e7", fontWeight:"500"}}><a href={project.repo}>See Github Repository</a> </Button>
             </CardBody>
         </Card>
        

@@ -17,17 +17,17 @@ const Profile=()=>{
                     <Row>
                         <Col sm="12" lg={{ size: 6}} className="info-box">
                             <div className="hero-text" >
-                                <h2> Rixant Rokaha</h2>
+                                <h2>Rixant Rokaha</h2>
                                 <hr />
-                                <p> Aspiring Machine Learning Engineer</p>
+                                <p>Machine Learning | Software Engineer</p>
                             </div>
                             <div className="hero-info .d-lg-inline-block d-block " >
                                 <h2 > General Info</h2>
                                 <hr  />
                                 <ul>
-                                    <li><span className="d-block d-md-inline-block">Date of Birth </span> Feb 20, 1997</li>
+                                    <li><span className="d-block d-md-inline-block">Date of Birth </span>Feb 20, 1999</li>
                                     <li><span className="d-block d-md-inline-block">Address </span>Bloomfield, New Jersey, US</li>
-                                    <li><span className="d-block  d-md-inline-block">E-mail </span>rishantrokaha@gmail.com</li>
+                                    <li><span className="d-block  d-md-inline-block">E-mail </span>rixantrokaha@gmail.com</li>
                                     <li><span className="d-block d-md-inline-block">Phone </span>+1 973 652 4487</li>
                                 </ul> 
                             </div>
